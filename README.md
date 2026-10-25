@@ -109,13 +109,14 @@ alpha_wrap test\box.obj    test\box_wrap.obj    --alpha 0.1  --offset 0.01
 ## 7. 目录
 
 ```
-cpp/
-  src/alpha_wrap.cpp      单文件实现
-  CMakeLists.txt
-  build.bat
-  test/gen_models.py      生成球/环/盒/平面/缺陷汤（需要 numpy）
-  test/validate_obj.py    输出网格校验（水密、朝向、体积、δ、绕数）
-  test/*.obj              测试输入与示例输出
+src/alpha_wrap.cpp      单文件实现
+CMakeLists.txt
+build.bat
+test/gen_models.py      生成球/环/盒/平面/缺陷汤（需要 numpy）
+test/validate_obj.py    输出网格校验（水密、朝向、体积、δ、绕数）
+test/inspect_obj.py     统计 OBJ 顶点/面数/包围盒
+test/render_obj.py      软件光栅化预览图（需要 Pillow）
+test/*.obj              测试输入（生成的 *_wrap*.obj 由 .gitignore 排除）
 ```
 
 ## 8. 参考
