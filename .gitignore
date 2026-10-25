@@ -1,0 +1,14 @@
+# build artifacts
+alpha_wrap.exe
+alpha_wrap
+build/
+*.pdb
+*.ilk
+*.exp
+*.lib
+
+# generated outputs / large assets
+test/*_wrap*.obj
+test/balujun_*
+test/*.png
+test/*_log.txt
